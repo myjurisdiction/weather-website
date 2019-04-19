@@ -62,6 +62,10 @@ app.get('/weather', (req, res) => {
     }
 })
 
+app.get("/weather/*", (req, res) => {
+    res.render('404');
+})
+
 app.listen(PORT, () => {
     console.log(`Server is listening at PORT: ${PORT}`);
 });
