@@ -62,7 +62,7 @@ app.get('/weather', (req, res) => {
     }
 })
 
-app.get("/weather/*", (req, res) => {
+app.get("/*", (req, res) => {
     res.render('404');
 })
 
