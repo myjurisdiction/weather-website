@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abhishek Raj",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.4",
