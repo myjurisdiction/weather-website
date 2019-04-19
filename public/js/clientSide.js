@@ -7,18 +7,13 @@ const temperature = document.querySelector('#temperature')
 const temperatureHigh = document.querySelector('#temperatureHigh')
 const timezone = document.querySelector('#timezone')
 
-
-
-// two.textContent = 'uydwjkcbsdivuhwiuwhvwiuvhwiuvhiuvvuiwvwiueviuvh'
-
-
 searchLocation.addEventListener('submit', (e) => {
 
     e.preventDefault()
     const location = search.value
 
     
-    const url = "http://localhost:5000/weather?address=" + location
+    const url = "/weather?address=" + location
 
         fetch(url).then((response) => {
             response.json().then((data) => {
